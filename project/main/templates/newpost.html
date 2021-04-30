@@ -1,0 +1,15 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+    <form action="/createdpost" method='GET'>
+        {% csrf_token %} 
+        <p class="subtitle">Title</p>
+        <textarea name="title" id="title" cols="30" rows="2" placeholder="Title" class='textarea'></textarea>
+        <hr>
+        <p class="subtitle">Body</p>
+        <textarea name="body" id="body" cols="30" rows="10" class="textarea" placeholder="Body..."></textarea>
+
+        <br><br>
+        <button type="submit" class='button is-primary'>Submit</button>
+    </form>
+{% endblock %}

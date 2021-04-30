@@ -10,3 +10,6 @@ def index(req):
 def post(req, pk):
     obj = Post.objects.get(id=pk)
     return render(req, 'post.html', {'post': obj})
+
+def newpost(req):
+    return render(req, 'newpost.html')
