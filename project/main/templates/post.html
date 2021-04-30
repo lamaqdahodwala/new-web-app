@@ -1,0 +1,12 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+    <h1 class="title">{{ post.title }}</h1>
+    <h1 class="subtitle"> {{post.upvotes}} upvotes</h1>
+    <hr>
+    <div class="content">
+        <p class="content">
+            {{ post.body }}
+        </p>
+    </div>
+{% endblock %}
